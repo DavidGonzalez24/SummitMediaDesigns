@@ -183,7 +183,7 @@ footer {
     }
 
     .logo-container img {
-        max-height: 80px; 
+        max-height: 120px; 
     }
 
     nav ul {
@@ -213,7 +213,7 @@ footer {
 
     #estimates form {
         padding: 1rem;
-        margin: 0 1rem; 
+        margin: 0 1rem;
     }
 
     footer {
@@ -224,7 +224,7 @@ footer {
 
 @media (max-width: 480px) {
     .logo-container img {
-        max-height: 80px;
+        max-height: 100px; 
     }
 
     #hero h2 {
@@ -249,4 +249,3 @@ footer {
         font-size: 0.8rem;
     }
 }
-
