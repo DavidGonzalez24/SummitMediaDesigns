@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summit Media Designs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <img src="SUMMIT MEDIA DESIGNS LOGO.png" alt="Summit Media Designs Logo">
+            <h1>Summit Media Designs</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#estimates">Get an Estimate</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2>Innovative Vinyl Wrap & Window Solutions</h2>
+        <p>Your trusted partner for bulletproof windows and custom designs.</p>
+        <button onclick="scrollToSection('estimates')">Request a Free Quote</button>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Security Saftey Film</h3>
+            <p>Top-notch security solutions for schools, offices, and homes.</p>
+        </div>
+        <div class="service">
+            <h3>Vinyl Wraps</h3>
+            <p>Custom perforated vinyl wraps for any space.</p>
+        </div>
+    </section>
+
+    <!-- Estimates Section -->
+    <section id="estimates">
+        <h2>Request an Estimate</h2>
+        <form id="estimate-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="description">Project Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> S Colt Ln, Edinburg, TX 78596</p>
+        <p><strong>Phone:</strong> 956-570-5055</p>
+        <p><strong>Email:</strong> <a href="mailto:gonzalezdavidlee@gmail.com">gonzalezdavidlee@gmail.com</a></p>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Summit Media Designs. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        document.getElementById('estimate-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your request! We will get back to you shortly.');
+        });
+    </script>
+</body>
+</html>
