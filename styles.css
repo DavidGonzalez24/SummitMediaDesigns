@@ -24,8 +24,8 @@ header {
 }
 
 .logo-container img {
-    max-height: 70px;
-    margin-right: 1rem;
+    max-height: 100px;
+    margin-right: 1.5rem;
 }
 
 nav ul {
