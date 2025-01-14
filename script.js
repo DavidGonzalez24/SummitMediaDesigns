@@ -14,18 +14,6 @@ estimateForm.addEventListener('submit', function(event) {
 });
 
 
-// Dynamic Background Animation in Hero Section
-const hero = document.getElementById('hero');
-let colors = ['#00509E', '#003366', '#0077CC'];
-let currentColor = 0;
-
-
-setInterval(() => {
-    currentColor = (currentColor + 1) % colors.length;
-    hero.style.backgroundColor = colors[currentColor];
-}, 3000);
-
-
 // Services Section Hover Effect
 const services = document.querySelectorAll('.service');
 services.forEach(service => {
