@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -179,20 +178,27 @@ footer {
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
+        padding: 1rem;
     }
 
-    .logo-container {
-        justify-content: center;
+    .logo-container img {
+        max-height: 50px; /* Smaller logo size for better fit */
     }
 
     nav ul {
         flex-direction: column;
-        align-items: center;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
     }
 
     #hero h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        padding: 0 1rem;
     }
 
     #hero button {
@@ -201,10 +207,46 @@ footer {
     }
 
     .services-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
+        gap: 1.5rem;
     }
 
     #estimates form {
         padding: 1rem;
+        margin: 0 1rem; 
+    }
+
+    footer {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
     }
 }
+
+@media (max-width: 480px) {
+    .logo-container img {
+        max-height: 40px;
+    }
+
+    #hero h2 {
+        font-size: 1rem;
+    }
+
+    #hero button {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .services-container {
+        gap: 1rem;
+    }
+
+    #estimates form {
+        margin: 0;
+        padding: 0.8rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
