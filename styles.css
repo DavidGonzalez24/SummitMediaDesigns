@@ -237,6 +237,19 @@ footer {
         margin: 0 auto; 
     }
 
+    #estimates form input,
+    #estimates form textarea {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 1rem;
+    }
+
+    #estimates form textarea {
+        resize: none;
+    }
+
+
     footer {
         font-size: 0.9rem;
         padding: 1rem;
@@ -265,6 +278,18 @@ footer {
         width: 100%;
         padding: 0.8rem;
         margin: 0 auto; 
+    }
+
+    #estimates form input,
+    #estimates form textarea {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 1rem;
+    }
+
+    #estimates form textarea {
+        resize: none;
     }
 
     footer {
