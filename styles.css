@@ -7,14 +7,14 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Header */
 header {
     background: #003366;
     color: white;
-    padding: 0.5rem 1rem;
+    padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .logo-container {
@@ -24,8 +24,8 @@ header {
 }
 
 .logo-container img {
-    max-height: 100px;
-    margin-right: 1.5rem;
+    max-height: 80px;
+    width: auto;
 }
 
 nav ul {
@@ -33,8 +33,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 nav ul li {
@@ -45,6 +44,11 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
 }
 
 /* Hero Section */
@@ -52,22 +56,23 @@ nav ul li a {
     background: #00509E;
     color: white;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 3rem 1.5rem;
 }
 
 #hero h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 #hero button {
     background: #FFC107;
     color: #003366;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1.5rem;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.2rem;
     border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
 #hero button:hover {
@@ -76,55 +81,53 @@ nav ul li a {
 
 /* Services Section */
 #services {
-    padding: 2rem;
+    padding: 2rem 1.5rem;
     background: #eaf2f8;
 }
 
 #services h2 {
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
 }
 
 .services-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
 }
 
 .service {
     background: white;
-    margin: 1rem 0;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    overflow: hidden;
 }
 
 .service:hover {
-    transform: scale(1.02);
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Estimates Section */
 #estimates {
-    padding: 2rem;
+    padding: 2rem 1.5rem;
     background: #f4f4f4;
 }
 
 #estimates h2 {
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 #estimates form {
     max-width: 600px;
     margin: 0 auto;
     background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #estimates form label {
@@ -136,19 +139,20 @@ nav ul li a {
 #estimates form input,
 #estimates form textarea {
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.8rem;
     margin-bottom: 1rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
 #estimates form button {
     background: #00509E;
     color: white;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1.5rem;
     cursor: pointer;
     border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
 #estimates form button:hover {
@@ -157,13 +161,14 @@ nav ul li a {
 
 /* Contact Section */
 #contact {
-    padding: 2rem;
+    padding: 2rem 1.5rem;
     background: #eaf2f8;
     text-align: center;
 }
 
 #contact h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
 }
 
 /* Footer */
@@ -171,7 +176,7 @@ footer {
     background: #003366;
     color: white;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1.5rem;
 }
 
 /* Responsive Design */
@@ -179,61 +184,60 @@ footer {
     header {
         flex-direction: column;
         align-items: center;
-        padding: 1rem;
+        padding: 1.5rem;
+    }
+
+    .logo-container {
+        justify-content: center;
     }
 
     .logo-container img {
-        max-height: 120px; 
+        max-height: 100px;
     }
 
     nav ul {
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 0.8rem;
         text-align: center;
     }
 
-    nav ul li {
-        margin: 0.5rem 0;
-    }
-
     #hero h2 {
-        font-size: 1.3rem;
-        padding: 0 1rem;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
     }
 
     #hero button {
-        font-size: 0.9rem;
-        padding: 0.4rem 0.8rem;
+        font-size: 1rem;
+        padding: 0.7rem 1.2rem;
     }
 
     .services-container {
-        grid-template-columns: 1fr; 
-        gap: 1.5rem;
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
     }
 
     #estimates form {
-        padding: 1rem;
-        margin: 0 1rem;
+        padding: 1.5rem;
     }
 
     footer {
-        padding: 0.5rem 1rem;
         font-size: 0.9rem;
+        padding: 1rem;
     }
 }
 
 @media (max-width: 480px) {
     .logo-container img {
-        max-height: 100px; 
+        max-height: 80px;
     }
 
     #hero h2 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     #hero button {
-        font-size: 0.8rem;
-        padding: 0.3rem 0.6rem;
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
     }
 
     .services-container {
@@ -241,11 +245,11 @@ footer {
     }
 
     #estimates form {
-        margin: 0;
-        padding: 0.8rem;
+        padding: 1rem;
     }
 
     footer {
         font-size: 0.8rem;
     }
 }
+
