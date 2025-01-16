@@ -7,10 +7,8 @@ function scrollToSection(sectionId) {
 // Form Submission Handling
 const estimateForm = document.getElementById('estimate-form');
 estimateForm.addEventListener('submit', function(event) {
-    event.preventDefault();
     const name = document.getElementById('name').value;
     alert(`Thank you, ${name}, for requesting an estimate! We will get back to you shortly.`);
-    estimateForm.reset();
 });
 
 
