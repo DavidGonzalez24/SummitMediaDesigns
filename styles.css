@@ -185,7 +185,9 @@ footer {
     text-align: center;
     padding: 1.5rem;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     header {
@@ -255,9 +257,7 @@ footer {
         padding: 1rem;
     }
 }
-html {
-    scroll-behavior: smooth;
-}
+
 
 @media (max-width: 480px) {
     .logo-container img {
